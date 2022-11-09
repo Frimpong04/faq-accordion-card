@@ -4,3 +4,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* FAQ STYLES */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, red, yellow);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: cover;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+.image-container {
+    background-image: url("images/bg-pattern-desktop.svg");
+}
