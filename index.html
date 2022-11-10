@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robot" content="index, follow">
-    <meta name="description" content="A Frontend mentor newbie challenge">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="icon" href="images/favicon-32x32.png"/>
-    <title>FAQ Accordion Card</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robot" content="index, follow">
+<meta name="description" content="A Frontend mentor newbie challenge">
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" href="images/favicon-32x32.png"/>
+<title>FAQ Accordion Card</title>
 </head>
 <body>
-    <main>
-        <div class="image-container">
+<main>
+    <img src="images/illustration-box-desktop.svg" alt="" class="box" />
+    <div class="image-container">
+        <!-- <picture class="">
+            <source media="(max-width: 375px)" srcset="images/illustration-woman-online-mobile.svg" class="mobile-img">
+            <source media="(min-width: 376px)" srcset="images/illustration-woman-online-desktop.svg" class="desktop-img">
             <img src="images/illustration-woman-online-desktop.svg" alt=""  class="woman-mobile"/>
-            <img  src="images/illustration-box-desktop.svg" alt="" class="box"/>
-        </div>
-        <div class="text-container">
-            <h1>FAQ</h1>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <p class="faq">How many team members can i invite?</p>
-                    <img src="images/icon-arrow-down.svg" alt="" class="down-arrow"/>
-                </div>
-                <p class="faq-answer">You can invite a maximum of 10 tem members</p>
-                
+        </picture> -->
+        <img src="images/illustration-woman-online-desktop.svg" alt="" class="woman-online-desktop" />
+        <img src="images/illustration-woman-online-mobile.svg" alt="" class="woman-online-mobile" />
+        
+    </div>
+    <div class="text-container">
+        <h1>FAQ</h1>
+        <div class="faq-container">
+            <div class="faq-item">
+                <p class="faq">How many team members can i invite?</p>
+                <img src="images/icon-arrow-down.svg" alt="" class="down-arrow"/>
             </div>
-            <hr />
-            <div class="faq-container">
-                <div class="faq-item">
-                    <p class="faq">What is the maximum file upload?</p>
-                    <img src="images/icon-arrow-down.svg" alt=""  class="down-arrow"/>
-                </div>
-                <p class="faq-answer">No more than 2GB. All files in your account must fit your alloted storage space.</p>
+            <p class="faq-answer">You can invite a maximum of 10 tem members</p>
+            
+        </div>
+        <hr />
+        <div class="faq-container">
+            <div class="faq-item">
+                <p class="faq">What is the maximum file upload?</p>
+                <img src="images/icon-arrow-down.svg" alt=""  class="down-arrow"/>
+            </div>
+            <p class="faq-answer">No more than 2GB. All files in your account must fit your alloted storage space.</p>
                 
             </div>
             <hr />
@@ -47,7 +54,7 @@
             <hr />
             <div class="faq-container">
                 <div class="faq-item">
-                    <p>How do I reset my password?</p>
+                    <p class="faq">How do I reset my password?</p>
                     <img src="images/icon-arrow-down.svg" alt="" class="down-arrow"/>
                 </div>
                 

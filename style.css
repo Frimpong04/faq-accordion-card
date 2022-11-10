@@ -7,6 +7,8 @@
 
 html {
     font-size: 62.5%;
+    --soft-violet : hsl(273, 75%, 66%);
+    --soft-blue:  hsl(240, 73%, 65%);
 }
 
 h1 {
@@ -18,7 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg, red, yellow);
+    background-image: linear-gradient(45deg,var(--soft-blue), var(--soft-violet));
     background-repeat: no-repeat;
     background-position: center;
     background-position: cover;
@@ -29,10 +31,71 @@ main {
     display: flex;
     flex-wrap: wrap;
     background-color: whitesmoke;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 2rem;
+    position: relative;
 }
 
+/* desktop image styles */
 .image-container {
     background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex:1 1 20rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.woman-online-desktop {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    position: relative;
+    left:-100px;
+    margin: 3rem;
+}
+
+.box {
+    position: absolute;
+    left: -120px;
+    bottom: 10px;
+    z-index:3;
+}
+
+
+.woman-online-mobile {
+    display: none;
+}
+
+/* text styles */
+.text-container {
+    flex: 1 1 20rem;
+    padding: 2rem 2rem 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.text-container h1 {
+    text-align: left;
+    margin: 2rem 0;
+    font-size:3rem;
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+.faq {
+    flex:1;
+}
+
+.faq-answer {
+    margin-bottom:1rem;
+}
+p {
+    font-size: 1.5rem;
 }
