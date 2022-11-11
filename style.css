@@ -20,11 +20,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg,var(--soft-blue), var(--soft-violet));
+    background-image: linear-gradient(to top,var(--soft-blue), var(--soft-violet));
     background-repeat: no-repeat;
     background-position: center;
     background-position: cover;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 main {
@@ -39,7 +39,6 @@ main {
 
 /* desktop image styles */
 .image-container {
-   
     background-image: url("images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,6 +69,9 @@ main {
 
 
 .woman-online-mobile {
+    display: none;
+}
+.mobile-bg {
     display: none;
 }
 
@@ -112,32 +114,62 @@ p {
     main {
         width: 90%;
         background-color:transparent ;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border:1px solid red; */
     }
+
     .box {
         display:none;
     }
+
     .woman-online-desktop {
         display:none;
     }
+
     .image-container {
+        overflow: visible;
         position:relative;
-        z-index:5;
+        z-index:3;
+        top:7.6rem;
+        /* left:3rem; */
     }
+
     .woman-online-mobile {
         display:block;
-        border:1px solid red;
+        /* border:1px solid rgb(38, 255, 0); */
         position:relative;
-        top:10px;
-        z-index:3;
+        /* top:7.6rem; */
+        left:3rem;
+        z-index:2;
+        width:80%;
+        height: auto;
     }
+
+    .mobile-bg {
+        display: block;
+        position:relative;
+        width:70% ;
+        height:auto;
+        /* border:1px solid yellow; */
+        z-index: 1;
+        top:-65px;
+        left: 40px;
+    }
+
     .text-container {
-        border:1px solid green;
+        /* border:1px solid green; */
         padding:1rem;
         background-color:white;
         border-radius:2rem;
+        position: relative;
+        top:-77px;
     }
     
     .text-container h1 {
         text-align: center;
+        margin-top:7rem;
+        /* margin-bottom: 3rem; */
     }
 }
