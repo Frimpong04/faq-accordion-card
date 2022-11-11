@@ -24,21 +24,22 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-position: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    background-color: whitesmoke;
     justify-content: space-between;
     border-radius: 2rem;
     position: relative;
     margin:2rem 0rem;
+    background-color:white ;
 }
 
 /* desktop image styles */
 .image-container {
+   
     background-image: url("images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,6 +47,7 @@ main {
     flex:1 1 20rem;
     position: relative;
     overflow: hidden;
+    /* background-color: white; */
 }
 
 .woman-online-desktop {
@@ -75,6 +77,7 @@ main {
 .text-container {
     flex: 1 1 20rem;
     padding: 2rem 2rem 2rem 0rem;
+    /* background-color: white; */
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -106,41 +109,35 @@ p {
 
 /* mobile styles */
 @media only screen and (max-width: 375px) {
-    body {
-        height: 100vh;
-    }
     main {
         width: 90%;
-        display: block;
-        height: 90vh;
-    }
-    .image-container {
-        overflow: visible;
-        background-image: url("images/bg-pattern-mobile.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .woman-online-desktop {
-        display: none;
-    }
-
-    .woman-online-mobile {
-        display: block;
-        border:1px solid red;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        background-color:transparent ;
     }
     .box {
-        display: none;
+        display:none;
+    }
+    .woman-online-desktop {
+        display:none;
+    }
+    .image-container {
+        position:relative;
+        z-index:5;
+    }
+    .woman-online-mobile {
+        display:block;
+        border:1px solid red;
+        position:relative;
+        top:10px;
+        z-index:3;
     }
     .text-container {
-       
-        padding:1rem;
         border:1px solid green;
+        padding:1rem;
+        background-color:white;
+        border-radius:2rem;
     }
+    
     .text-container h1 {
-    text-align: center;
+        text-align: center;
     }
 }
