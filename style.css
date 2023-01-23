@@ -105,10 +105,21 @@ main {
     padding-bottom:1rem;
     display: none;
 }
+
+.show-faq-answer {
+    display:block; 
+}
+
 p {
     font-size: 1.3rem;
 }
-
+.down-arrow {
+    border:1px solid red;
+    transform: rotate(0deg);
+}
+.up-arrow {
+    transform: rotateX(180deg);
+}
 /* mobile styles */
 @media only screen and (max-width: 375px) {
     main {
