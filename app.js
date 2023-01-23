@@ -9,5 +9,5 @@ faqContainers.forEach(faqContainer => faqContainer.addEventListener("click", () 
 
     faqAnswer.classList.toggle("show-faq-answer");
     downArrow.classList.toggle("up-arrow");
-    console.log("good");
+    //console.log("good");
 }));
