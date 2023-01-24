@@ -11,9 +11,12 @@ html {
     --soft-blue:  hsl(240, 73%, 65%);
 }
 
-h1 {
-    text-align: center;
+h1, .faq-item p {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    /* text-align: center; */
 }
+
 
 /* FAQ STYLES */
 body {
@@ -111,13 +114,20 @@ main {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
 }
 .down-arrow {
     transform: rotate(0deg);
 }
 .up-arrow {
     transform: rotateX(180deg);
+}
+
+hr {
+    height: 0.2rem;
+    background-color: black;
 }
 
 /* mobile styles */
